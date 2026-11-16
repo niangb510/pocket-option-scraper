@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pocket Option Test</title>
+<style>
+  body { margin: 0; font-family: sans-serif; background: #1a1a1a; color: #fff; }
+  .site-content { display: flex; height: 100vh; }
+  .charts { flex: 1; position: relative; padding: 20px; }
+  .chart-header { font-size: 16px; margin-bottom: 10px; }
+  .current-price { font-size: 28px; font-weight: bold; color: #00d084; margin-top: 40px; }
+  .right-widget-container { width: 300px; background: #2a2a2a; padding: 20px; }
+  .call-put-block { margin-bottom: 20px; }
+  .block--payout { font-size: 22px; font-weight: bold; }
+  .value__val { color: #ffd700; }
+  .value__val-end { font-size: 18px; }
+  .deals-list { margin-top: 20px; }
+  .deals-list__item { padding: 8px 0; border-bottom: 1px solid #444; font-size: 14px; }
+  .item-row { display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="site-content">
+  <div class="charts">
+    <div class="chart-header">
+      <span class="current-symbol">AUD/NZD OTC</span>
+      <span class="period-current">M1</span>
+    </div>
+    <div class="chart-area">
+      <!-- Le vrai prix de marché -->
+      <div class="current-price">1.08456</div>
+    </div>
+  </div>
+
+  <div class="right-widget-container">
+    <div class="widget-slot">
+      <div class="call-put-block control-panel" id="put-call-buttons-chart-2">
+        <div class="call-put-block__in">
+          <div class="block__control control">
+            <div class="control__value value">
+              <div class="value__val">Paiement +92% +€3.84</div>
+            </div>
+          </div>
+          <div class="buttons__wrap">
+            <button>Achat</button>
+            <button>Vente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="deals-list">
+      <div class="deals-list__item">
+        <div class="item-row">
+          <span>AED/CNY OTC +92%</span>
+          <span>09:11</span>
+        </div>
+        <div>€11.93 €0 €0</div>
+      </div>
+      <div class="deals-list__item">
+        <div class="item-row">
+          <span>EUR/JPY OTC +92%</span>
+          <span>09:07</span>
+        </div>
+        <div>€8.82 €16.93 +€8.11</div>
+      </div>
+      <div class="deals-list__item">
+        <div class="item-row">
+          <span>AED/CNY OTC +92%</span>
+          <span>08:58</span>
+        </div>
+        <div>€1.50 €0 €0</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

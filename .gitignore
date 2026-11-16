@@ -1,0 +1,13 @@
+node_modules/
+# Données collectées (peuvent contenir des messages WebSocket avec jeton de session)
+data/*
+!data/.gitkeep
+# Copies de profil navigateur (cookies, sessions) : ne JAMAIS publier
+tmp-opera-*/
+tmp-*-profile/
+# Rapports générés
+reports/*
+!reports/.gitkeep
+*.log
+.DS_Store
+.env

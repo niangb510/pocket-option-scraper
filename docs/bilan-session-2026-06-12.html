@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Bilan Session EUR/TRY OTC - 12-13 Juin 2026</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; background: #0a0e1a; color: #e2e8f0; margin: 0; padding: 40px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #fff; border-bottom: 2px solid #3b82f6; padding-bottom: 12px; }
+  h2 { color: #93c5fd; margin-top: 32px; }
+  .kpi { display: inline-block; background: #111827; border: 1px solid #1e2d47; border-radius: 12px; padding: 20px; margin: 8px; min-width: 180px; text-align: center; }
+  .kpi .val { font-size: 28px; font-weight: 800; }
+  .kpi .label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th { background: #1a2235; padding: 10px 14px; text-align: left; color: #64748b; text-transform: uppercase; font-size: 12px; }
+  td { padding: 8px 14px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .green { color: #10b981; }
+  .red { color: #ef4444; }
+  .blue { color: #60a5fa; }
+  .yellow { color: #f59e0b; }
+  .highlight { background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); border-radius: 12px; padding: 20px; margin: 16px 0; }
+  .verdict { background: linear-gradient(135deg, #0f172a, #1e1b4b); border: 1px solid #3b82f6; border-radius: 16px; padding: 24px; margin-top: 32px; }
+  .emoji-lg { font-size: 48px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📊 Bilan de Session — EUR/TRY OTC</h1>
+  <p>Session du 12 juin 2026 · 23:56:23 → 05:57:53 (6.0h)</p>
+
+  <h2>📈 Données de Marché</h2>
+  <div>
+    <div class="kpi"><div class="val blue">18 609</div><div class="label">Ticks collectés</div></div>
+    <div class="kpi"><div class="val green">1056</div><div class="label">UP (5.7%)</div></div>
+    <div class="kpi"><div class="val red">1053</div><div class="label">DOWN (5.7%)</div></div>
+    <div class="kpi"><div class="val" style="color:#64748b">16500</div><div class="label">NEUTRES (88.7%)</div></div>
+  </div>
+
+  <h2>💰 Prix</h2>
+  <div>
+    <div class="kpi"><div class="val blue">53.27402</div><div class="label">Prix Min</div></div>
+    <div class="kpi"><div class="val blue">53.27750</div><div class="label">Prix Max</div></div>
+    <div class="kpi"><div class="val blue">34.80</div><div class="label">Range (pips)</div></div>
+    <div class="kpi"><div class="val blue">0.170</div><div class="label">Volatilité moy. (pips)</div></div>
+  </div>
+
+  <h2>🎯 Simulation de Trading (Stratégie Breakout)</h2>
+  <div>
+    <div class="kpi"><div class="val yellow">90</div><div class="label">Trades exécutés</div></div>
+    <div class="kpi"><div class="val green">44</div><div class="label">✅ Gagnés</div></div>
+    <div class="kpi"><div class="val red">43</div><div class="label">❌ Perdus</div></div>
+    <div class="kpi"><div class="val red">-5.60€</div><div class="label">Profit net</div></div>
+  </div>
+
+  <table>
+    <tr><th>Métrique</th><th>Valeur</th></tr>
+    <tr><td>Win Rate</td><td class="green"><strong>50.6%</strong></td></tr>
+    <tr><td>Trades CALL</td><td>45 (48.9% WR)</td></tr>
+    <tr><td>Trades PUT</td><td>45 (48.9% WR)</td></tr>
+    <tr><td>Meilleure série</td><td class="green">6 gains consécutifs</td></tr>
+    <tr><td>Pire série</td><td class="red">4 pertes consécutives</td></tr>
+  </table>
+
+  <div class="verdict">
+    <h2 style="margin-top:0">🎯 Verdict</h2>
+    <p style="font-size:18px; line-height:1.7;">
+    ⚠️ <strong>SESSION MIXTE.</strong> Le win rate est en dessous des attentes du backtest. À analyser.
+    </p>
+    <p>Profit net : <strong class="red">-5.60€</strong> sur 90 trades (mise de 1€)</p>
+    <p>Ratio UP/DOWN sur la session : 1.00x (1056 UP / 1053 DOWN) — Marché plutôt haussier</p>
+    <p class="blue">Session générée le 13/06/2026 09:21:35</p>
+  </div>
+</div>
+</body>
+</html>
